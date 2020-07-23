@@ -15835,18 +15835,18 @@ var AudioRecorder = function () {
   };
 
   AudioRecorder.prototype.exportWav = function exportWav() {
-    var mp3Blob = mp3Encoder.getMP3();
-    recBufferMP3 = [];
+//     var mp3Blob = mp3Encoder.getMP3();
+//     recBufferMP3 = [];
 
-    var blobObject = {
-      blob: mp3Blob,
-      startTime: startTime,
-      stopTime: Date.now(),
-      options: mediaOptions,
-      blobURL: ''
-    };
+//     var blobObject = {
+//       blob: mp3Blob,
+//       startTime: startTime,
+//       stopTime: Date.now(),
+//       options: mediaOptions,
+//       blobURL: ''
+//     };
 
-    return blobObject
+//     return blobObject
 
     // we flat the left and right channels down
     var leftBuffer = this.mergeBuffers(leftchannel, recordingLength);
